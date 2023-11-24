@@ -23,6 +23,7 @@ destroy_btn.addEventListener('click', () => {
 
 function createBoxes(amount) {
   if (amount >= 1 && amount <= 100) {
+    destroyBoxes()
     let divs = [];
     let size = 10;
 
@@ -37,6 +38,7 @@ function createBoxes(amount) {
     boxes.append(...divs);
     input.value=''
   }
+  
 }
 function destroyBoxes() {
   boxes.innerHTML=''
